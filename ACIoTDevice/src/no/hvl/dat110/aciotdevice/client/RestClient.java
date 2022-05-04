@@ -4,10 +4,8 @@ import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.Response;
-
+import okhttp3.Response;	
 import java.io.IOException;
-
 import com.google.gson.Gson;
 
 public class RestClient {
@@ -47,7 +45,7 @@ public class RestClient {
 		OkHttpClient client  = new OkHttpClient();
 		Gson gson = new Gson();
 		
-		Request req = new Request.Builder()
+		Request req = new Request.Builder()	
 				.url("http://localhost:8080" + codepath)
 				.get()
 				.build();
